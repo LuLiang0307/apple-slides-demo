@@ -1,4 +1,4 @@
-let $buttons = $('.menu>ul>li.menuItem')
+let $buttons = $('#menu>ul>li')
 
 for (let i = 0; i < $buttons.length; i++) {
     $($buttons[i]).on('click', function(x) {
@@ -27,9 +27,7 @@ function setTimer() {
 }
 
 function activeButton($button) {
-  $button
-    .addClass('.active')
-    .siblings('.active').removeClass('active')
+  $button.addClass('active').siblings('.active').removeClass('active')
 }
 
 $('.window').on('mouseenter', function() {

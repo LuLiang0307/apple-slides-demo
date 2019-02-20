@@ -15,7 +15,7 @@ body{
 }
 .images{
   display: flex;
-  
+  align-items: flex-start;
 }
 .images>img{
   vertical-align: top;
@@ -33,12 +33,9 @@ body{
   text-align: center;
 }
 .menu ul li.active{
-  content: "";
-  border: 10px solid transparent;
-  border-top-color: #ffffff;
-  position: absolute;
-  top: 0;
-  left: 50%;
+  background: #E9E1E1;
+  transition: all 0.3s;
+  z-index: 1;
 }
 
 
